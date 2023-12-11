@@ -1,0 +1,87 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.toppings {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+.sizes {
+  margin-bottom: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.btn-submit {
+  background-color: #654caf;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.btn-submit:hover {
+  background-color: #36295c;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.newPizza {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.newPizza p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+#pizzaPrice {
+  font-size: 18px;
+  color: #654caf;
+  font-weight: bold;
+}
