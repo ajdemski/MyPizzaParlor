@@ -55,10 +55,10 @@ Code: PizzaParlor("large")
 Expected Output: 15;
 ```
 ```
-Describe: 
-Test 5: 
-Code: 
-Expected Output:
+Describe: PizzaParlor.toppingPrice
+Test 5: "it should return a price based on the toppings selected"
+Code: PizzaParlor("size", "toppings")
+Expected Output: undefined
 ```
 
 ## License
