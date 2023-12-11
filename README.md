@@ -60,7 +60,11 @@ Test 5: "it should return a price based on the toppings selected"
 Code: PizzaParlor("size", "toppings")
 Expected Output: undefined
 ```
-
+Describe: PizzaParlor.toppingPrice
+Test 5: "it should return a price for sizes and toppings but add them together into a total price"
+Code: let totalPrice = sizePrice + toppingsPrice;
+Expected Output: undefined
+```
 ## License
 
 _Copyright (c) <2023> <Aaron Demski>_

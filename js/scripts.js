@@ -21,4 +21,11 @@ PizzaParlor.prototype.sizePrice = function() {
 PizzaParlor.prototype.toppingPrice = function() {
   let toppingsPrice = this.toppings.length * 2;
   return toppingsPrice;
-}
+};
+
+PizzaParlor.prototype.calculateTotalPrice = function () {
+  let sizePrice = this.sizePrice();
+  let toppingsPrice = this.toppingPrice();
+  let totalPrice = sizePrice + toppingsPrice;
+  return totalPrice;
+};
