@@ -16,13 +16,13 @@ _A Code Review Project from Aaron Demski, In this repository you'll find index.h
 ## Setup/Installation Requirements
 
 * _Clone my repository to your desktop using VsCode._
-* In the terminal clone the repository with the command: git clone 
+* In the terminal clone the repository with the command: git clone https://github.com/ajdemski/MyPizzaParlor
 * _Navigte to the top level of the directory._
 * _Open index.html in the file you cloned._
 
 ## _Link To Site_
 
-* 
+* https://ajdemski.github.io/MyPizzaParlor/
 
 ## Known Bugs
 

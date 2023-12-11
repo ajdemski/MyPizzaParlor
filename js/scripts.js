@@ -6,11 +6,11 @@ function PizzaParlor(size, toppings) {
 
 PizzaParlor.prototype.sizePrice = function () {
   let sizePrice = 0;
-  if (this.size === "small") {
+  if (this.size === "Small") {
     sizePrice += 5;
-  } else if (this.size === "medium") {
+  } else if (this.size === "Medium") {
     sizePrice += 10;
-  } else if (this.size === "large") {
+  } else if (this.size === "Large") {
     sizePrice += 15;
   }
   return sizePrice;
