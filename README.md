@@ -56,12 +56,12 @@ Expected Output: 15;
 ```
 ```
 Describe: PizzaParlor.toppingPrice
-Test 5: "it should return a price based on the toppings selected"
+Test 6: "it should return a price based on the toppings selected"
 Code: PizzaParlor("size", "toppings")
 Expected Output: undefined
 ```
 Describe: PizzaParlor.toppingPrice
-Test 5: "it should return a price for sizes and toppings but add them together into a total price"
+Test 7: "it should return a price for sizes and toppings but add them together into a total price"
 Code: let totalPrice = sizePrice + toppingsPrice;
 Expected Output: undefined
 ```

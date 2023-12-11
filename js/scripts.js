@@ -29,3 +29,16 @@ PizzaParlor.prototype.calculateTotalPrice = function () {
   let totalPrice = sizePrice + toppingsPrice;
   return totalPrice;
 };
+
+// UI Logic
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("pizzaMaker");
+  const showPrice = document.getElementById("pizzaPrice");
+  const showSize = document.getElementById("showSize");
+  const showToppings = document.getElementById("showToppings");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+  })
+})
