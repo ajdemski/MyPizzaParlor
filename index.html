@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/scripts.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <title>Document</title>
 </head>
 
@@ -12,22 +14,24 @@
     <form id="pizzaMaker">
       <h1>Welcome to Aaron's Pizza Parlor</h1>
       <p>Select your prefered sizing and toppings for a price back!</p>
-      <div class="toppings">
-        <label for="cheese">Cheese</label>
-        <input type="checkbox" value="cheese">
-        <label for="peperoni">Peperoni</label>
-        <input type="checkbox" value="peperoni">
-        <label for="meat">Meat Lover</label>
-        <input type="checkbox" value="meat">
-        <label for="pineapple">Pineapple</label>
-        <input type="checkbox" value="pineapple">
+      <div class="checkbox-opt">
+        <div class="toppings" id="toppings">
+          <label for="cheese">Cheese</label>
+          <input type="checkbox" value="Cheese">
+          <label for="peperoni">Peperoni</label>
+          <input type="checkbox" value="Peperoni">
+          <label for="meat">Meat Lover</label>
+          <input type="checkbox" value="Meat">
+          <label for="pineapple">Pineapple</label>
+          <input type="checkbox" value="Pineapple">
+        </div>
       </div>
-      <div class="sizes">
+      <div class="sizes" id="sizes">
         <label for="pizzaSize">Sizes</label>
         <select name="pizzaSize" id="pizzaSize">
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
         </select>
       </div>
       <br />
@@ -35,8 +39,10 @@
     </form>
   </div>
   <h2>Your Pizza:</h2>
-  <p id="pizzaPrice"></p>
-  <script src="js/scripts.js"></script>
+  <div class="newPizza">
+    <p id="myNewPizza"></p>
+    <p id="pizzaPrice"></p>
+  </div>
 </body>
 
 </html>
