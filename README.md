@@ -32,21 +32,21 @@ _A Code Review Project from Aaron Demski, In this repository you'll find index.h
 
 ```
 Describe: PizzaParlor()
-Test 1: "It should calculate the price base on the size of the pizza"
-Code: PizzaParlor("small");
+Test 1: "It should calculate the price base on the size and toppings selected by the user"
+Code: PizzaParlor(size, toppings);
 Expected Output: undefined
 ```
 ```
-Describe:
-Test 2: 
-Code: 
-Expected Output:
+Describe: PizzaParlor()
+Test 2: "It should return the price of the small size"
+Code: PizzaParlor("small")
+Expected Output: 5;
 ```
 ```
 Describe: 
-Test 3:
-Code: 
-Expected Output:
+Test 3: "It should return the price of the medium size"
+Code: PizzaParlor("medium")
+Expected Output: 10;
 ```
 ```
 Describe:

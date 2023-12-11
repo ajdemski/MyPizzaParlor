@@ -10,6 +10,8 @@ PizzaParlor.prototype.sizePrice = function() {
   let sizePrice = 0;
   if (this.size === "small") {
     sizePrice += 5;
+  } else if (this.size === "medium") {
+    sizePrice += 10;
   }
   return sizePrice;
-}
+};
