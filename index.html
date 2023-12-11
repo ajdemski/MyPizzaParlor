@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  <h1>Welcome to Aaron's Pizza Parlor</h1>
-  <p>Select your prefered sizing and toppings for a price back!</p>
+  <div class="container">
+    <form id="pizzaMaker">
+      <h1>Welcome to Aaron's Pizza Parlor</h1>
+      <p>Select your prefered sizing and toppings for a price back!</p>
+      <div class="toppings">
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" value="cheese">
+        <label for="peperoni">Peperoni</label>
+        <input type="checkbox" value="peperoni">
+        <label for="meat">Meat Lover</label>
+        <input type="checkbox" value="meat">
+        <label for="pineapple">Pineapple</label>
+        <input type="checkbox" value="pineapple">
+      </div>
+      <div class="sizes">
+        <label for="pizzaSize">Sizes</label>
+        <select name="pizzaSize" id="pizzaSize">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <br />
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+  </div>
+  <h2>Your Pizza!:</h2>
+  <p id="pizzaPrice"></p>
 </body>
+
 </html>
