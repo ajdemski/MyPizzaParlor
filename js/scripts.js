@@ -1,4 +1,4 @@
-// Business Logic
+//Business Logic
 function PizzaParlor(size, toppings) {
   this.size = size;
   this.toppings = toppings;
@@ -17,41 +17,33 @@ PizzaParlor.prototype.sizePrice = function () {
 };
 
 PizzaParlor.prototype.toppingPrice = function () {
-  let toppingsPrice = this.toppings.length * 2;
-  return toppingsPrice;
+  let toppingPrice = this.toppings.length * 2;
+  return toppingPrice;
 };
 
-PizzaParlor.prototype.calculateTotalPrice = function () {
+PizzaParlor.prototype.totalPrice = function () {
   let sizePrice = this.sizePrice();
-  let toppingsPrice = this.toppingPrice();
-  let totalPrice = sizePrice + toppingsPrice;
+  let toppingPrice = this.toppingPrice();
+  let totalPrice = sizePrice + toppingPrice;
   return totalPrice;
 };
 
-// UI Logic
+//UI Logic
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("pizzaMaker");
-  const showPrice = document.getElementById("pizzaPrice");
-  const showSize = document.getElementById("showSize");
-  const showToppings = document.getElementById("showToppings");
+  const pizzaPrice = document.getElementById("pizzaPrice");
+  const myNewPizza = document.getElementById("myNewPizza");
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const pizzaSize = form.elements["pizzaSize"].value;
-    const pizzaToppings = form.querySelectorAll("input[type=checkbox]:checked");
-    let newPizza = new PizzaParlor(pizzaSize, pizzaToppings);
+    const size = document.getElementById("pizzaSize").value;
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    const toppings = Array.from(checkboxes).map((checkbox) => checkbox.value);
+    const pizza = new PizzaParlor(size, toppings);
 
-    if (showSize) {
-      showSize.textContent = `Size: ${pizzaSize}`;
-    }
-    if (showToppings) {
-      showToppings.textContent = `Toppings: ${Array.from(pizzaToppings).map(topping => topping.value).join(", ")}`;
-    }
-
-    const totalPrice = newPizza.calculateTotalPrice();
-    if (showPrice) {
-      showPrice.textContent = `Total Price: $${totalPrice}`;
-    }
+    const totalPrice = pizza.totalPrice();
+    pizzaPrice.textContent = "Total Price: $" + totalPrice;
+    myNewPizza.textContent = "You Ordered A " + size + " Pizza, with " + toppings.join(", ") + " Toppings";
   });
 });

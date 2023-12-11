@@ -47,7 +47,7 @@ select {
 }
 
 button.btn-submit {
-  background-color: #4caf50;
+  background-color: #654caf;
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -56,7 +56,7 @@ button.btn-submit {
 }
 
 button.btn-submit:hover {
-  background-color: #45a049;
+  background-color: #36295c;
 }
 
 h2 {
@@ -65,7 +65,23 @@ h2 {
   text-align: center;
 }
 
+.newPizza {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.newPizza p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
 #pizzaPrice {
   font-size: 18px;
-  color: #333;
+  color: #654caf;
+  font-weight: bold;
 }
