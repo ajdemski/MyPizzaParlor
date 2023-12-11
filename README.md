@@ -43,16 +43,16 @@ Code: PizzaParlor("small")
 Expected Output: 5;
 ```
 ```
-Describe: 
+Describe: PizzaParlor()
 Test 3: "It should return the price of the medium size"
 Code: PizzaParlor("medium")
 Expected Output: 10;
 ```
 ```
-Describe:
-Test 4: 
-Code: 
-Expected Output:
+Describe: PizzaParlor()
+Test 4: "It should return the price of the large size"
+Code: PizzaParlor("large")
+Expected Output: 15;
 ```
 ```
 Describe: 

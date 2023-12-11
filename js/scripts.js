@@ -12,6 +12,9 @@ PizzaParlor.prototype.sizePrice = function() {
     sizePrice += 5;
   } else if (this.size === "medium") {
     sizePrice += 10;
+  } else if (this.size === "large") {
+    sizePrice += 15;
   }
   return sizePrice;
 };
+
