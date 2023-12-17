@@ -32,38 +32,39 @@ _A Code Review Project from Aaron Demski, In this repository you'll find index.h
 
 ```
 Describe: PizzaParlor()
-Test 1: "It should calculate the price base on the size and toppings selected by the user"
-Code: PizzaParlor(size, toppings);
+Test 1: "It should create an object for size and toppings"
+Code: let pizza = new PizzaParlor("small", ["Cheese", "Pepperoni"]);
 Expected Output: undefined
 ```
 ```
-Describe: PizzaParlor()
+Describe: PizzaParlor.SizePrice()
 Test 2: "It should return the price of the small size"
-Code: PizzaParlor("small")
+Code: let pizza = new PizzaParlor("Small", []);
 Expected Output: 5;
 ```
 ```
-Describe: PizzaParlor()
+Describe: PizzaParlor.sizePrice()
 Test 3: "It should return the price of the medium size"
-Code: PizzaParlor("medium")
+Code: let pizza = new PizzaParlor("Medium", []);
 Expected Output: 10;
 ```
 ```
-Describe: PizzaParlor()
+Describe: PizzaParlor.sizePrice()
 Test 4: "It should return the price of the large size"
-Code: PizzaParlor("large")
+Code: let pizza = new PizzaParlor("Large", []);
 Expected Output: 15;
 ```
 ```
-Describe: PizzaParlor.toppingPrice
-Test 6: "it should return a price based on the toppings selected"
-Code: PizzaParlor("size", "toppings")
-Expected Output: undefined
+Describe: PizzaParlor.toppingPrice()
+Test 5: "it should return a price based on the toppings selected"
+Code: let pizza = new PizzaParlor("Medium", ["Cheese", "Pepperoni"]);
+Expected Output: 4
 ```
-Describe: PizzaParlor.toppingPrice
-Test 7: "it should return a price for sizes and toppings but add them together into a total price"
-Code: let totalPrice = sizePrice + toppingsPrice;
-Expected Output: undefined
+```
+Describe: PizzaParlor.totalPrice()
+Test 6: "it should return a total price of the pizza and toppings combined"
+Code: let pizza = new PizzaParlor("Medium", ["Cheese", Pepperoni"]);
+Expected Output: 14;
 ```
 ## License
 
