@@ -37,33 +37,38 @@ Code: let pizza = new PizzaParlor("small", ["Cheese", "Pepperoni"]);
 Expected Output: undefined
 ```
 ```
-Describe: PizzaParlor.SizePrice()
+Describe: PizzaParlor.sizePrice()
 Test 2: "It should return the price of the small size"
 Code: let pizza = new PizzaParlor("Small", []);
+Code: Pizza.sizePrice();
 Expected Output: 5;
 ```
 ```
 Describe: PizzaParlor.sizePrice()
 Test 3: "It should return the price of the medium size"
 Code: let pizza = new PizzaParlor("Medium", []);
+Code: Pizza.sizePrice();
 Expected Output: 10;
 ```
 ```
 Describe: PizzaParlor.sizePrice()
 Test 4: "It should return the price of the large size"
 Code: let pizza = new PizzaParlor("Large", []);
+Code: Pizza.sizePrice();
 Expected Output: 15;
 ```
 ```
 Describe: PizzaParlor.toppingPrice()
-Test 5: "it should return a price based on the toppings selected"
+Test 5: "It should return a price based on the toppings selected"
 Code: let pizza = new PizzaParlor("Medium", ["Cheese", "Pepperoni"]);
+Code: Pizza.toppingPrice();
 Expected Output: 4
 ```
 ```
 Describe: PizzaParlor.totalPrice()
-Test 6: "it should return a total price of the pizza and toppings combined"
+Test 6: "It should return a total price of the pizza and toppings combined"
 Code: let pizza = new PizzaParlor("Medium", ["Cheese", Pepperoni"]);
+Code: Pizza.totalPrice();
 Expected Output: 14;
 ```
 ## License
